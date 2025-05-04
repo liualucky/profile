@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>劉永隆的個人網頁</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #007ACC; color: white; padding: 1em; text-align: center; }
+    nav ul { display: flex; justify-content: center; list-style: none; padding: 0; background: #005A9C; margin: 0; }
+    nav li { margin: 0 1em; }
+    nav a { color: white; text-decoration: none; padding: 1em; display: block; }
+    nav a:hover { background: #004080; }
+    section { display: none; padding: 2em; max-width: 800px; margin: auto; background: white; }
+    section.active { display: block; }
+    img.avatar { width: 150px; border-radius: 50%; display: block; margin: 1em auto; }
+    .contact-info { text-align: center; margin-top: 2em; }
+    pre.resume { white-space: pre-wrap; background: #f9f9f9; border-left: 5px solid #007ACC; padding: 1em; font-size: 0.9em; }
+    .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 8px; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 1em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>劉永隆的個人網頁</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showPage('home')">首頁</a></li>
+      <li><a href="#" onclick="showPage('portfolio')">作品集</a></li>
+      <li><a href="#" onclick="showPage('resume')">履歷</a></li>
+      <li><a href="#" onclick="showPage('video')">介紹影片</a></li>
+      <li><a href="#" onclick="showPage('contact')">聯絡方式</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="active">
+    <img src="your-avatar.jpg" alt="劉永隆頭像" class="avatar">
+    <p>您好，我是劉永隆，擁有多年工地與工程現場管理經驗，注重安全、效率與品質。對專案施工細節有嚴格的要求，致力於完成每一項工程任務。歡迎參觀我的個人網頁。</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>作品集</h2>
+    <div class="gallery">
+      <img src="project1.jpg" alt="工程照片1">
+      <img src="project2.jpg" alt="工程照片2">
+      <img src="project3.jpg" alt="工程照片3">
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>履歷與自傳</h2>
+    <a href="resume-liu-yunglung.pdf" download>下載完整履歷 PDF</a>
+    <pre class="resume">
+【經歷概覽】
+- 凱鴻環保科技股份有限公司 技術部 總監（2007.02–2022.09）
+- 凱希環保工程有限公司 台中火力發電廠專案組（2022.12–2024.03）
+
+【代表專案】
+- 台塑集團高空/地面燃燒塔製作與試車（ITAS）
+- 中石化/中石油煉化及LNG系統工程（中國多地）
+- 台中火力發電廠空污改善工程（韓 K.C）
+
+【語文能力】
+- 英文：聽說略懂，讀寫中等
+- 臺語：精通
+
+【擅長工具】
+- 辦公軟體：Excel、Outlook、Word、PowerPoint、Project、WPS
+- 工程製圖：AutoCAD
+- 模擬軟體：FLARENET、FLARESIM
+
+【完整自傳】
+我出生於台灣，從小對工程與機械產生濃厚興趣。畢業後即投入工地與機械設備相關領域，累積了超過三十年的豐富經驗。
+
+早期任職於漢崴與桂裕企業，參與整廠輸送與設備試車。後期轉任凱鴻與凱希等公司，歷任工程師、主任、經理至技術總監，帶領團隊完成多項國內外重大工程，包括台塑、中石化、中石油、以及台中火力電廠專案。
+
+我擅長協調整合跨部門人力與技術資源，熟悉工程設計、現場安裝、配管與試車流程，對安全規範與施工品質有高度要求。曾多次前往中國、德國、日本等地參與國際合作，累積豐富的多元文化與技術溝通經驗。
+
+我自認是一位敬業、細心並持續精進的工程專業人士，樂於接受挑戰與分享經驗，期許自己能繼續為台灣及國際工程界做出貢獻。
+    </pre>
+  </section>
+
+  <section id="video">
+    <h2>介紹影片</h2>
+    <div style="text-align:center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡方式</h2>
+    <div class="contact-info">
+      <p>姓名：劉永隆</p>
+      <p>手機：0952706019</p>
+      <p>Email：liu0952706019@gmail.com</p>
+    </div>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
