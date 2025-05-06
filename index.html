@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>劉永隆的個人網頁</title>
+  <title>劉永隆的個人網頁 | Liu Yung-Lung's Personal Website</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
     header { background: #007ACC; color: white; padding: 1em; text-align: center; }
-    nav ul { display: flex; justify-content: center; list-style: none; padding: 0; background: #005A9C; margin: 0; }
+    nav ul { display: flex; flex-wrap: wrap; justify-content: center; list-style: none; padding: 0; background: #005A9C; margin: 0; }
     nav li { margin: 0 1em; }
     nav a { color: white; text-decoration: none; padding: 1em; display: block; }
     nav a:hover { background: #004080; }
@@ -18,112 +18,130 @@
     pre.resume { white-space: pre-wrap; background: #f9f9f9; border-left: 5px solid #007ACC; padding: 1em; font-size: 0.9em; }
     .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 8px; }
     .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 1em; }
+    .video-category { margin-bottom: 2em; }
+    .video-category h3 { color: #007ACC; }
+    .video-frame { margin-bottom: 1em; text-align: center; }
+    video { max-width: 100%; height: auto; border-radius: 8px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>劉永隆的個人網頁</h1>
+    <h1>劉永隆的個人網頁<br><span style="font-size: 0.6em;">Liu Yung-Lung's Personal Website</span></h1>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#" onclick="showPage('home')">首頁</a></li>
-      <li><a href="#" onclick="showPage('portfolio')">作品集</a></li>
-      <li><a href="#" onclick="showPage('resume')">履歷</a></li>
-      <li><a href="#" onclick="showPage('video')">介紹影片</a></li>
-      <li><a href="#" onclick="showPage('contact')">聯絡方式</a></li>
+      <li><a href="#" onclick="showPage('home')">首頁 / Home</a></li>
+      <li><a href="#" onclick="showPage('portfolio')">作品集 / Portfolio</a></li>
+      <li><a href="#" onclick="showPage('resume')">履歷 / Resume</a></li>
+      <li><a href="#" onclick="showPage('video')">影片 / Videos</a></li>
+      <li><a href="#" onclick="showPage('contact')">聯絡方式 / Contact</a></li>
     </ul>
   </nav>
 
   <section id="home" class="active">
-    <img src="your-avatar.jpg" alt="劉永隆頭像" class="avatar">
-    <p>您好，我是劉永隆，擁有多年工地與工程現場管理經驗，注重安全、效率與品質。對專案施工細節有嚴格的要求，致力於完成每一項工程任務。歡迎參觀我的個人網頁。</p>
+    <img src="your-avatar.jpg" alt="劉永隆頭像 / Liu Yung-Lung" class="avatar">
+    <p>您好，我是劉永隆，擁有多年工地與工程現場管理經驗，注重安全、效率與品質。對專案施工細節有嚴格的要求，致力於完成每一項工程任務。<br>
+    Hello, I'm Liu Yung-Lung. With years of experience in site and engineering project management, I prioritize safety, efficiency, and quality. I focus on construction detail and strive to complete every project with excellence.</p>
   </section>
 
   <section id="portfolio">
-    <h2>作品集</h2>
+    <h2>作品集 / Portfolio</h2>
     <div class="gallery">
-      <img src="project1.jpg" alt="工程照片1">
-      <img src="project2.jpg" alt="工程照片2">
-      <img src="project3.jpg" alt="工程照片3">
-      <img src="project4.jpg" alt="工程照片4">
-      <img src="project5.jpg" alt="工程照片5">
-      <img src="project6.jpg" alt="工程照片6">
+      <img src="project1.jpg" alt="工程照片1 / Project Photo 1">
+      <img src="project2.jpg" alt="工程照片2 / Project Photo 2">
+      <img src="project3.jpg" alt="工程照片3 / Project Photo 3">
+      <img src="project4.jpg" alt="工程照片4 / Project Photo 4">
+      <img src="project5.jpg" alt="工程照片5 / Project Photo 5">
+      <img src="project6.jpg" alt="工程照片6 / Project Photo 6">
     </div>
   </section>
 
   <section id="resume">
-    <h2>履歷與自傳</h2>
-    <a href="resume-liu-yunglung.pdf" download>下載完整履歷 PDF</a>
+    <h2>履歷與自傳 / Resume & Biography</h2>
+    <a href="resume-liu-yunglung.pdf" download>下載完整履歷 PDF / Download Full Resume PDF</a>
     <pre class="resume">
-【經歷概覽】
-- 凱鴻環保科技股份有限公司 技術部 總監（2007.02–2022.09）
-- 凱希環保工程有限公司 台中火力發電廠專案組（2022.12–2024.03）
+【經歷概覽 / Career Overview】
+- 凱鴻環保科技股份有限公司 技術部 總監（2007.02–2022.09） / Technical Director, Kai Hong Environmental Tech Co.
+- 凱希環保工程有限公司 台中火力發電廠專案組（2022.12–2024.03） / Project Lead, Taichung Thermal Power Plant Project
 
-【代表專案】
-- 台塑集團高空/地面燃燒塔製作與試車（ITAS）
-- 中石化/中石油煉化及LNG系統工程（中國多地）
-- 台中火力發電廠空污改善工程（韓 K.C）
+【代表專案 / Key Projects】
+- 台塑集團高空/地面燃燒塔製作與試車（ITAS） / Elevated/Ground Flare Systems for Formosa Plastics (ITAS)
+- 中石化/中石油煉化及LNG系統工程 / Sinopec & PetroChina Refinery + LNG Systems
+- 台中火力發電廠空污改善工程（韓 K.C） / Air Pollution Control Project, Taichung Power Plant (K.C)
 
-【語文能力】
-- 英文：聽說略懂，讀寫中等
-- 臺語：精通
+【語文能力 / Languages】
+- 英文：聽說略懂，讀寫中等 / English: Basic listening and speaking; Intermediate reading and writing
+- 臺語：精通 / Taiwanese: Fluent
 
-【擅長工具】
-- 辦公軟體：Excel、Outlook、Word、PowerPoint、Project、WPS
-- 工程製圖：AutoCAD
-- 模擬軟體：FLARENET、FLARESIM
+【擅長工具 / Tools & Skills】
+- 辦公軟體：Excel、Outlook、Word、PowerPoint、Project、WPS / Office Tools
+- 工程製圖：AutoCAD / Drafting
+- 模擬軟體：FLARENET、FLARESIM / Simulation Tools
 
-【完整自傳】
-我出生於台灣，從小對工程與機械產生濃厚興趣。畢業後即投入工地與機械設備相關領域，累積了超過三十年的豐富經驗。
+【完整自傳 / Biography】
+我出生於台灣，從小對工程與機械產生濃厚興趣。
+I was born in Taiwan and have had a strong interest in engineering and machinery since childhood.
 
-早期任職於漢崴與桂裕企業，參與整廠輸送與設備試車。後期轉任凱鴻與凱希等公司，歷任工程師、主任、經理至技術總監，帶領團隊完成多項國內外重大工程，包括台塑、中石化、中石油、以及台中火力電廠專案。
+畢業後即投入工地與機械設備相關領域，累積了超過三十年的豐富經驗。
+After graduation, I entered the field of construction and mechanical equipment, accumulating over 30 years of rich experience.
 
-我擅長協調整合跨部門人力與技術資源，熟悉工程設計、現場安裝、配管與試車流程，對安全規範與施工品質有高度要求。曾多次前往中國、德國、日本等地參與國際合作，累積豐富的多元文化與技術溝通經驗。
+早期任職於漢崴與桂裕企業，參與整廠輸送與設備試車。
+In the early stages of my career, I worked at Hanwei and Guey Yu, involved in full-plant conveyor and equipment testing.
+
+後期轉任凱鴻與凱希等公司，歷任工程師、主任、經理至技術總監。
+Later, I joined companies like Kai Hong and Kai Xi, holding positions from engineer to technical director.
+
+帶領團隊完成多項國內外重大工程，包括台塑、中石化、中石油、以及台中火力電廠專案。
+I led teams in completing major domestic and international projects, including those for Formosa Plastics, Sinopec, PetroChina, and Taichung Power Plant.
+
+我擅長協調整合跨部門人力與技術資源，熟悉工程設計、現場安裝、配管與試車流程，對安全規範與施工品質有高度要求。
+I excel at coordinating cross-departmental manpower and technical resources. I'm well-versed in engineering design, on-site installation, piping, and commissioning processes, with high standards for safety regulations and construction quality.
+
+曾多次前往中國、德國、日本等地參與國際合作，累積豐富的多元文化與技術溝通經驗。
+I have participated in international collaborations in China, Germany, and Japan, gaining extensive multicultural and technical communication experience.
 
 我自認是一位敬業、細心並持續精進的工程專業人士，樂於接受挑戰與分享經驗，期許自己能繼續為台灣及國際工程界做出貢獻。
+I consider myself a dedicated, meticulous, and continuously improving engineering professional. I embrace challenges and enjoy sharing my experience, hoping to continue contributing to both Taiwan’s and the global engineering field.
     </pre>
   </section>
 
   <section id="video">
-    <h2>介紹影片</h2>
-
+    <h2>介紹影片 / Project Videos</h2>
     <div class="video-category">
       <h3>高空燃燒塔（Elevated Flare System）</h3>
       <div class="video-frame">
         <video controls>
           <source src="elevated-flare.mp4" type="video/mp4">
-          您的瀏覽器不支援 HTML5 視訊播放。
+          您的瀏覽器不支援 HTML5 視訊播放 / Your browser does not support HTML5 video.
         </video>
       </div>
     </div>
-
     <div class="video-category">
       <h3>地面燃燒塔（Ground Flare System）</h3>
       <div class="video-frame">
         <video controls>
           <source src="ground-flare .mp4" type="video/mp4">
-          您的瀏覽器不支援 HTML5 視訊播放。
+          您的瀏覽器不支援 HTML5 視訊播放 / Your browser does not support HTML5 video.
         </video>
       </div>
     </div>
-
     <div class="video-category">
       <h3>多點式地面燃燒塔（Multipoint Ground Flare System）</h3>
       <div class="video-frame">
         <video controls>
           <source src="multipoint-flare .mp4" type="video/mp4">
-          您的瀏覽器不支援 HTML5 視訊播放。
+          您的瀏覽器不支援 HTML5 視訊播放 / Your browser does not support HTML5 video.
         </video>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>聯絡方式</h2>
+    <h2>聯絡方式 / Contact</h2>
     <div class="contact-info">
-      <p>姓名：劉永隆</p>
-      <p>手機：0952706019</p>
+      <p>姓名：劉永隆 / Name: Liu Yung-Lung</p>
+      <p>手機：0952706019 / Phone: 0952706019</p>
       <p>Email：liu0952706019@gmail.com</p>
     </div>
   </section>
@@ -136,3 +154,4 @@
   </script>
 </body>
 </html>
+
